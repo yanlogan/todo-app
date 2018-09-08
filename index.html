@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/style.css">
+	<title>To-Do list</title>
+</head>
+<body>
+	<section class="main">
+		<div class="container">
+			<section class="todo">
+				<h2 class="todo__header">Список дел:</h2>
+				<ul class="todo-list">
+					<!-- <li class="todo-list__item">
+						<div class="todo-list__item-name">
+							Купить лошадь
+							<span class="todo-list__item-details"><img src="img/arrow.png" alt="details"></span>
+							<span class="todo-list__item-delete"><img src="img/delete.png" alt="delete"></span>
+						</div>
+						<div class="todo-list__item-description">
+							По цене 300 т.р. за штуку
+						</div>
+					</li>
+					<li class="todo-list__item">
+						<div class="todo-list__item-name">
+							Позвонить маме
+							<span class="todo-list__item-details"><img src="img/arrow.png" alt="details"></span>
+							<span class="todo-list__item-delete"><img src="img/delete.png" alt="delete"></span>
+						</div>
+						<div class="todo-list__item-description">
+							Пригласить в кино
+						</div>
+					</li> -->
+				</ul>
+				<div class="todo__empty">Список пуст...</div>
+			</section>
+			<section class="add-new">
+				<h2 class="add-new__header">Добавить новое дело</h2>
+				<form class="add-new-form">
+					<label class="add-new__label" for="name">* Название</label>
+					<input class="add-new__name" id="nameInput" name="name" type="text" placeholder=" " required="true">
+					<label class="add-new__label" for="description">* Описание</label>
+					<textarea class="add-new__description" id="descriptionInput" name="description" id="new-item-description" cols="30" rows="10" placeholder=" " required="true"></textarea>
+					<button class="add-new__btn" type="button">Добавить дело</button> <!-- type="button" чтобы не обновлялась страница, но тогда не работают required-->
+				</form>
+			</section>
+		</div>
+	</section>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+$bg-color: #f5f5f5
+$item-bg-color: #ffffff
+$border-color: #f7f7f7
+$input-bg-color: #f9f9f9
+$input-border-color: #ebebeb
+$btn-bg-color: #2174fd
+$btn-text-color: #ffffff
+$secondary-color: #8993ad
+$font: 'Arial', sans-serif
+
+html, body
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	margin: 0
+	padding: 0
+	background-color: $bg-color
+	font-family: $font
+
+.container
+	max-width: 960px
+	margin: 0 auto
+	display: flex
+	justify-content: space-between
+
+.main
+	margin-top: 65px
+
+.todo,
+.add-new
+	width: 470px
+
+.todo__header,
+.add-new__header
+	margin: 0 0 30px
+	font-size: 21px
+
+.todo-list__item,
+.add-new-form
+	background-color: $item-bg-color
+
+.todo-list
+	margin: 0
+	padding: 0
+
+.todo-list__item
+	position: relative
+	list-style: none
+	margin-bottom: 20px
+
+.todo-list__item-name
+	padding: 15px 24px 15px 20px
+	border-bottom: 1px solid $border-color
+
+.todo-list__item-description
+	display: none
+	padding: 10px 24px 10px 20px
+	min-height: 65px
+
+.todo-list__item-details
+	position: absolute
+	right: 24px
+
+.todo-list__item-delete
+	position: relative
+	left: 20px
+
+.todo-list__item-details,
+.todo-list__item-delete
+	cursor: pointer
+
+.todo-list__item-description,
+.add-new__label
+	font-size: 14px
+	color: $secondary-color
+
+.todo__empty
+	// display: none
+	color: $secondary-color	
+
+.add-new-form
+	padding: 0 40px 40px
+	display: flex
+	flex-direction: column
+
+.add-new__label
+	margin-bottom: 10px
+
+.add-new__label,
+.add-new__btn
+	margin-top: 30px
+
+.add-new__name,
+.add-new__description
+	padding: 10px 15px
+	background-color: $input-bg-color
+	border: 1px solid $input-border-color
+	&:focus,
+	&:active
+		outline: none
+
+.add-new__btn
+	width: 225px
+	padding: 15px 55px
+	background-color: $btn-bg-color
+	border: none
+	color: $btn-text-color
