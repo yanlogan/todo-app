@@ -36,10 +36,15 @@ $(function() {
 			$(this)
 				.click(function(){
 					let description = $(this).parents('.todo-list__item').children('.todo-list__item-description');
-					console.log(description.text());
 					if (description.css('display') == 'none') {
+						$(this).css({
+							'transform' : 'rotate(0deg)'
+						});
 						description.show();
 					} else {
+						$(this).css({
+							'transform' : 'rotate(90deg)'
+						});
 						description.hide();
 					}
 				});
@@ -50,7 +55,6 @@ $(function() {
 		$('.todo-list__item-delete').each(function(){
 			$(this)
 				.click(function(){
-					console.log('click');
 					$(this).parents('.todo-list__item').remove();
 					if ($('.todo-list').children('li').length < 1) {
 						$('.todo__empty').show();
